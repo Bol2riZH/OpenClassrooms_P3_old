@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood_p3_mre",
+  "version": "1.0.0",
+  "description": "integrated website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthieu REUNGOAT",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
