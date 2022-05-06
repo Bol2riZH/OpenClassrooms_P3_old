@@ -1,0 +1,27 @@
+section {
+    background: $light-grey;
+}
+
+.restaurant {
+    @include medium {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.restaurantLayout {
+    @include medium {
+        width: 1024px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        border: .1rem solid black;
+    }
+    @include large {
+        width: 1490px;
+
+        border: .1rem solid black;
+    }
+}
+

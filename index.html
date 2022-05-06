@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Accueil Ohmyfood!</title>
 </head>
 
@@ -12,51 +13,101 @@
     </header>
 
     <main>
-        <section>
-            <header class="search">
-                <div class="location">
-                    <p><img src="" alt="position">Paris, Belleville</p> 
-                </div>
-        
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-        
-                <button>Explorer nos restaurants</button>
-            </header>
-
-            <div class="help">
-                <div class="help_card">
-                    <div class="number">1</div>
-                    <div class="symbole"><img src="" alt="symbole"></div>
-                    <p>Choisissez un restaurant</p>
-                </div>
-
-                <div class="help_card">
-                    <div class="number">2</div>
-                    <div class="symbole"><img src="" alt="symbole"></div>
-                    <p>Composez votre menu</p>
-                </div>
-
-                <div class="help_card">
-                    <div class="number">3</div>
-                    <div class="symbole"><img src="" alt="symbole"></div>
-                    <p>Dégustez au restaurant</p>
-                </div>
+        <header class="search">
+            <div class="location">
+                <p><img src="" alt="position">Paris, Belleville</p> 
             </div>
-        </section>
+    
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+    
+            <button>Explorer nos restaurants</button>
+        </header>
+
+        <header class="help">
+            <h2>Fonctionnement</h2>
+
+            <div class="helpCard">
+                <div class="helpCard__number">1</div>
+                <div class="helpCard__symbole"><img src="" alt="symbole"></div>
+                <p>Choisissez un restaurant</p>
+            </div>
+
+            <div class="helpCard">
+                <div class="helpCard__number">2</div>
+                <div class="helpCard__symbole"><img src="" alt="symbole"></div>
+                <p>Composez votre menu</p>
+            </div>
+
+            <div class="helpCard">
+                <div class="helpCard__number">3</div>
+                <div class="helpCard__symbole"><img src="" alt="symbole"></div>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </header>
 
         <section>
-            <article>
-                <h1>Restaurants</h1>
-                <div class="restaurant__card">
-                    <div class="restaurant__img"><img src="img\la_palette_du_gout.jpg" alt="photo"></div>
-                    <div class="restaurant__new"></div>
-                    <div class="restaurant__name">la pallette du goût</div>
-                    <div class="restaurant__place">ménilmontant</div>
-                    <div class="heart"><img src="" alt="coeur"></div>
+            <h2>Restaurants</h2>
+            <div class="restaurant">
+
+                <div class="restaurantLayout">
+    
+                    <a class="restaurantCard" href="#">
+                        <div class="restaurantCard__img">
+                            <img src="img\la_palette_du_gout.jpg" alt="photo">
+                        </div>
+                        <span class="restaurantCard__new">Nouveau</span>
+                        <footer>
+                            <div class="restaurantCard__description">
+                                <h3>la palette du goût</h3>
+                                <span>ménilmontant</span>
+                            </div>
+                            <div class="restaurantCard__heart"><img src="#" alt="heart"></div>
+                        </footer>
+                    </a>
+                    <a class="restaurantCard" href="#">
+                        <div class="restaurantCard__img">
+                            <img src="img\la_palette_du_gout.jpg" alt="photo">
+                        </div>
+                        <span class="restaurantCard__new">Nouveau</span>
+                        <footer>
+                            <div class="restaurantCard__description">
+                                <h3>la palette du goût</h3>
+                                <span>ménilmontant</span>
+                            </div>
+                            <div class="restaurantCard__heart"><img src="#" alt="heart"></div>
+                        </footer>
+                    </a>
+                    <a class="restaurantCard" href="#">
+                        <div class="restaurantCard__img">
+                            <img src="img\la_palette_du_gout.jpg" alt="photo">
+                        </div>
+                        <span class="restaurantCard__new">Nouveau</span>
+                        <footer>
+                            <div class="restaurantCard__description">
+                                <h3>la palette du goût</h3>
+                                <span>ménilmontant</span>
+                            </div>
+                            <div class="restaurantCard__heart"><img src="#" alt="heart"></div>
+                        </footer>
+                    </a>
+                    <a class="restaurantCard" href="#">
+                        <div class="restaurantCard__img">
+                            <img src="img\la_palette_du_gout.jpg" alt="photo">
+                        </div>
+                        <span class="restaurantCard__new">Nouveau</span>
+                        <footer>
+                            <div class="restaurantCard__description">
+                                <h3>la palette du goût</h3>
+                                <span>ménilmontant</span>
+                            </div>
+                            <div class="restaurantCard__heart"><img src="#" alt="heart"></div>
+                        </footer>
+                    </a> 
+                     
                 </div>
-            </article>
-        </section>
+            </section>
+            </div>
 
         <footer>
             <div class="logo__footer"><img src="" alt="logo"></div>
