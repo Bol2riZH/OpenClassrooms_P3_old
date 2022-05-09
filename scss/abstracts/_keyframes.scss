@@ -1,0 +1,10 @@
+@keyframes btn-hover {
+    0% {
+        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        filter:brightness(100%);
+    }
+    100% {
+        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.35);
+        filter:brightness(110%);
+    }
+}

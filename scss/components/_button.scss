@@ -1,0 +1,18 @@
+button {
+    background: linear-gradient(
+        $primary-color,
+        $secondary-color
+    );
+    border-radius: 3rem;
+    border-style: none;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    padding: 1.2rem 2.2rem;
+
+    color: $light-color;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    &:hover {
+        cursor: pointer;
+        animation: btn-hover ease-in-out 250ms forwards;
+    }
+}

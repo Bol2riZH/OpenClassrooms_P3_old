@@ -3,17 +3,24 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 62.5%;
-    margin: auto;
 }
 
 body {
     font-size: 1.6rem;
-    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3.2rem;
+
+}
+
+h2 {
+    font-size: 2.4rem;
 }
 
 a {
