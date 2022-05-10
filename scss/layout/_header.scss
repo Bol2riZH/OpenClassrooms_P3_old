@@ -6,9 +6,7 @@
     h1 {
         font-family: 'shrikhand';
         background: $light-color;
-    }
-    h2 {
-        text-align: center;
+        margin: 1.6rem 0;
     }
     .location {
         font-size: 1.8rem;
@@ -36,10 +34,9 @@
 .help {
     margin: 3rem;
     @include large {
-        h2 { //à optimiser...
-            text-align: center;
-            margin-right: 1145px;
-        }
+         h2 {
+             text-align: center;
+         }
     }
     .container {
         margin-top: 1rem;
@@ -61,7 +58,7 @@
             border-radius: 2rem;
             box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
             @include large {
-                width: 420px;
+            width: 420px;
             }
             &__number {
                 position: relative;

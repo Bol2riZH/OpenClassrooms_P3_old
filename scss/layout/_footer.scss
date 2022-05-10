@@ -1,9 +1,21 @@
 .footerPage {
     background: $background-footer-color;
     color: $light-color;
+    padding: 1.5rem;
+
     h1 {
         font-family: 'shrikhand';
         font-weight: 300;
         font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    li {
+        margin: .5rem 0;
+    }
+    a {
+        color: $light-color;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

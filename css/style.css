@@ -14,14 +14,6 @@ body {
   font-size: 1.6rem;
 }
 
-h1 {
-  font-size: 3.2rem;
-}
-
-h2 {
-  font-size: 2.4rem;
-}
-
 a {
   text-decoration: none;
 }
@@ -65,7 +57,8 @@ button:hover {
 }
 
 .restaurantCard {
-  width: 85%;
+  color: black;
+  width: 90%;
   max-width: 850px;
   height: 250px;
   margin: 3rem;
@@ -112,11 +105,22 @@ button:hover {
 .footerPage {
   background: #353535;
   color: white;
+  padding: 1.5rem;
 }
 .footerPage h1 {
   font-family: "shrikhand";
   font-weight: 300;
   font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.footerPage li {
+  margin: 0.5rem 0;
+}
+.footerPage a {
+  color: white;
+}
+.footerPage a:hover {
+  text-decoration: underline;
 }
 
 .search {
@@ -128,9 +132,7 @@ button:hover {
 .search h1 {
   font-family: "shrikhand";
   background: white;
-}
-.search h2 {
-  text-align: center;
+  margin: 1.6rem 0;
 }
 .search .location {
   font-size: 1.8rem;
@@ -159,7 +161,6 @@ button:hover {
 @media screen and (min-width: 1489px) {
   .help h2 {
     text-align: center;
-    margin-right: 1145px;
   }
 }
 .help .container {
@@ -200,15 +201,26 @@ button:hover {
   padding-top: 0.1rem;
 }
 
-section {
+.restaurant {
   background: #f6f6f6;
+  padding: 5rem 0 0.5rem 0;
 }
-
+.restaurant h2 {
+  margin-left: 3rem;
+}
 @media screen and (min-width: 1023px) {
   .restaurant {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .restaurant h2 {
+    align-self: flex-start;
+  }
+}
+@media screen and (min-width: 1489px) {
+  .restaurant h2 {
+    align-self: center;
   }
 }
 
