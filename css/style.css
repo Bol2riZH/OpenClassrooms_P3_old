@@ -1,13 +1,3 @@
-@keyframes btn-hover {
-  0% {
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    filter: brightness(100%);
-  }
-  100% {
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.35);
-    filter: brightness(110%);
-  }
-}
 *,
 *::after,
 *::before {
@@ -66,10 +56,12 @@ button {
   color: white;
   font-size: 1.8rem;
   font-weight: bolder;
+  transition: box-shadow 250ms, filter 250ms;
 }
 button:hover {
   cursor: pointer;
-  animation: btn-hover ease-in-out 250ms forwards;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.35);
+  filter: brightness(110%);
 }
 
 .restaurantCard {
