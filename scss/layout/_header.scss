@@ -1,3 +1,4 @@
+//PAGE D'ACCEUIL - RESTAURANT (index.html)
 .search {
     display: flex;
     flex-direction: column;
@@ -75,5 +76,13 @@
                 padding-top: .1rem;
             }
         }
+    }
+}
+
+//PAGE RESTAURANT
+.logo {
+    h1 {
+        font-family: 'shrikhand';
+        text-align: center;
     }
 }

@@ -45,6 +45,7 @@ button {
   border-style: none;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   padding: 1.3rem 2.1rem;
+  width: fit-content;
   color: white;
   font-size: 1.8rem;
   font-weight: bolder;
@@ -57,16 +58,16 @@ button:hover {
 }
 
 .restaurantCard {
-  color: black;
-  width: 90%;
-  max-width: 850px;
-  height: 250px;
-  margin: 3rem;
-  border-radius: 1rem;
-  background: white;
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 90%;
+  max-width: 850px;
+  height: 250px;
+  color: black;
+  margin: 3rem;
+  border-radius: 1rem;
+  background: white;
 }
 @media screen and (min-width: 1023px) {
   .restaurantCard {
@@ -201,6 +202,11 @@ button:hover {
   padding-top: 0.1rem;
 }
 
+.logo h1 {
+  font-family: "shrikhand";
+  text-align: center;
+}
+
 .restaurant {
   background: #f6f6f6;
   padding: 5rem 0 0.5rem 0;
@@ -236,6 +242,47 @@ button:hover {
   .restaurantLayout {
     width: 1490px;
   }
+}
+
+.logo h2 {
+  text-align: center;
+  font-family: "shrikhand";
+}
+
+.restaurantPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.restaurantPage__img img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 550px;
+}
+.restaurantPage__menu {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  max-width: 1200px;
+  background: #f6f6f6;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  padding: 3rem 2rem;
+}
+
+.plate {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.plate__price {
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

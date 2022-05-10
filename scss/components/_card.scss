@@ -1,8 +1,17 @@
 .restaurantCard {
-    color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
     width: 90%;
     max-width: 850px;
     height: 250px;
+    
+    color: black;
+    margin: 3rem;
+    border-radius: 1rem;
+    background: white;
+    
     @include medium {
         width: 30vw;
         min-width: 300px;
@@ -12,13 +21,6 @@
         width: 30vw;
         max-width: 650px;
     }
-    margin: 3rem;
-    border-radius: 1rem;
-    background: white;
-    
-    display: flex;
-    flex-direction: column;
-    position: relative;
     &__img {
         img {
             width: 100%;

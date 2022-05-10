@@ -32,3 +32,50 @@
 }
 
 //PAGE RESTAURANT
+.logo {
+    h2 {
+        text-align: center;
+        font-family: 'shrikhand';
+    }
+}
+
+.restaurantPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__img {
+        img {
+            object-fit: cover;
+            width: 100%;
+            max-height: 550px;
+        }
+    }
+    &__menu {
+        margin-top: -50px;
+
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        max-width: 1200px;
+        
+        background: $light-grey;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+        padding: 3rem 2rem;
+    }
+}
+
+.plate {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 2rem;
+    background: $light-color;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+
+    &__price {
+        align-self: center;
+    }
+}
