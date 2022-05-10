@@ -13,27 +13,70 @@
     .location {
         font-size: 1.8rem;
         font-weight: 800;
-        background: $mid-grey;
         width: 100%;
         padding: 2rem 0;
+        
+        background: $mid-grey;
+        box-shadow: inset 0rem .3rem .4rem 0.1rem rgba(0, 0, 0, 0.1);
     }
     .information {
         background: $light-grey;
         width: 100%;
-        padding-bottom: 2rem;
+        padding-bottom: 2rem ;
         h2 {
             padding: 2rem 0;
         }
         p {
-            padding-bottom: 1rem;
+            padding: 0 3rem 1rem 3rem;
+            word-wrap: break-word;
         }
     }
 }
 
 .help {
-    display: flex;
-    flex-direction: column;
-    @include medium {
-        flex-direction: row;
+    margin: 3rem;
+    @include large {
+        h2 { //à optimiser...
+            text-align: center;
+            margin-right: 1145px;
+        }
+    }
+    .container {
+        margin-top: 1rem;
+        @include large {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+        .helpCard {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+
+            width: 100%;
+            max-width: 750px;
+
+            padding: 2rem;
+            background-color: $light-grey;
+            border-radius: 2rem;
+            box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+            @include large {
+                width: 420px;
+            }
+            &__number {
+                position: relative;
+                left: -28px;
+
+                width: 25px;
+                height: 25px;
+
+                text-align: center;
+                color: $light-grey;
+
+                background: $secondary-color;
+                border-radius: 2rem;
+                padding-top: .1rem;
+            }
+        }
     }
 }
