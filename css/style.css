@@ -244,15 +244,33 @@ button:hover {
   }
 }
 
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .logo h2 {
   text-align: center;
+  font-family: "shrikhand";
+}
+
+.restaurantPage__header {
+  margin-top: -50px;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  background: #f6f6f6;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  padding: 3rem 2rem;
   font-family: "shrikhand";
 }
 
 .restaurantPage {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .restaurantPage__img img {
   object-fit: cover;
@@ -260,29 +278,47 @@ button:hover {
   max-height: 550px;
 }
 .restaurantPage__menu {
-  margin-top: -50px;
   display: flex;
   flex-direction: column;
   align-self: center;
   width: 100%;
   max-width: 1200px;
-  background: #f6f6f6;
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
   padding: 3rem 2rem;
+  background: #f6f6f6;
+}
+@media screen and (min-width: 1023px) {
+  .restaurantPage__menu {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+.restaurantPage button {
+  align-self: center;
+}
+
+.starter h3, .mainCourse h3, .dessert h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 3rem;
 }
 
 .plate {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border-radius: 2rem;
-  padding: 2rem;
   background: white;
+  border-radius: 2rem;
+  padding: 1.6rem;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin: 1.8rem 0;
+}
+.plate__name span {
+  font-weight: bold;
 }
 .plate__price {
   align-self: center;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
