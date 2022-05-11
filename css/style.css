@@ -283,35 +283,48 @@ button:hover {
   align-self: center;
   width: 100%;
   max-width: 1200px;
-  padding: 3rem 2rem;
   background: #f6f6f6;
 }
 @media screen and (min-width: 1023px) {
   .restaurantPage__menu {
     flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
   }
 }
-.restaurantPage button {
+
+.footerMenu {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 0;
+  background: #f6f6f6;
+}
+.footerMenu button {
   align-self: center;
 }
 
+.starter, .mainCourse, .dessert {
+  margin: 0 2rem;
+}
 .starter h3, .mainCourse h3, .dessert h3 {
   font-weight: normal;
   text-transform: uppercase;
-  margin-top: 3rem;
 }
 
 .plate {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   background: white;
   border-radius: 2rem;
   padding: 1.6rem;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
-  margin: 1.8rem 0;
+  margin: 2rem 0;
+}
+.plate__name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .plate__name span {
   font-weight: bold;

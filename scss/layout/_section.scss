@@ -76,26 +76,34 @@
         
         width: 100%;
         max-width: 1200px;
-        padding: 3rem 2rem;
         
         background: $light-grey;
         @include medium {
             flex-direction: row;
-            justify-content: center;
-            gap: 2rem;
         }
     }
+}
+
+.footerMenu {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1200px;
+    padding: 4rem 0;
+    background: $light-grey;
+
     button {
         align-self: center;
     }
 }
         
-
 .starter, .mainCourse, .dessert {
+    margin: 0 2rem;
     h3 {
         font-weight: normal;
         text-transform: uppercase;
-        margin-top: 3rem;
     }
 }
 
@@ -103,16 +111,20 @@
     display: flex;
     justify-content: space-between;
 
-    width: 100%;
-
     background: $light-color;
     border-radius: 2rem;
     padding: 1.6rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 
-    margin: 1.8rem 0;
-    &__name span {
-        font-weight: bold;
+    margin: 2rem 0;
+
+    &__name {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        span {
+            font-weight: bold;
+        }
     }
     &__price {
         align-self: center;
