@@ -21,3 +21,9 @@ a {
 li {
     list-style-type: none;
 }
+
+h2, h3, span, p {
+    &::first-letter {
+        text-transform: capitalize;
+    }
+}

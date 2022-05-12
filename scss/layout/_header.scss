@@ -5,7 +5,7 @@
     align-items: center;
     text-align: center;
     h1 {
-        font-family: 'shrikhand';
+        font-family: 'shrikand';
         background: $light-color;
         margin: 1.6rem 0;
     }
@@ -81,8 +81,9 @@
 
 //PAGE RESTAURANT
 .logo {
-    h1 {
-        font-family: 'shrikhand';
+    margin-bottom: 3rem;
+    > h1 {
         text-align: center;
+        font-family: 'shrikand';
     }
 }

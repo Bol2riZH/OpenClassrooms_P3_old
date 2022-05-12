@@ -32,16 +32,6 @@
 }
 
 //PAGE RESTAURANT
-.logo {
-    display: flex; // A revoir
-    justify-content: flex-start;
-    align-items: center;
-    h2 {
-        text-align: center;
-        font-family: 'shrikhand';
-    }
-}
-
 .restaurantPage__header {
     margin-top: -50px;
 
@@ -50,13 +40,13 @@
     justify-content: space-between;
 
     width: 100%;
-    max-width: 1200px;
+    max-width: $width-menu;
     
     background: $light-grey;
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
     padding: 3rem 2rem;
-    font-family: 'shrikhand';
+    font-family: 'shrikand';
 }
 
 .restaurantPage {
@@ -73,9 +63,10 @@
         display: flex;
         flex-direction: column;
         align-self: center;
+        justify-content: center;
         
         width: 100%;
-        max-width: 1200px;
+        max-width: $width-menu;
         
         background: $light-grey;
         @include medium {
@@ -85,12 +76,13 @@
 }
 
 .footerMenu {
-    align-self: center;
     display: flex;
     flex-direction: column;
+    align-self: center;
 
     width: 100%;
-    max-width: 1200px;
+    max-width: $width-menu;
+
     padding: 4rem 0;
     background: $light-grey;
 
@@ -100,12 +92,22 @@
 }
         
 .starter, .mainCourse, .dessert {
-    overflow: hidden; //permet à chaque .plate de shrink en ellipsis (= min-width: 0;)
+    overflow: hidden; //Permet à chaque .plate de shrink en ellipsis (= min-width: 0;)
+    @include medium {
+        width: 100%;
+    }
 
     margin: 0 2rem;
     h3 {
         font-weight: normal;
         text-transform: uppercase;
+    }
+    .underlineTitle {
+        width: 50px;
+        height: 4px;
+        background: $new-color;
+
+        margin-top: .5rem;
     }
 }
 
@@ -113,7 +115,6 @@
     display: flex;
     justify-content: space-between;
 
-    
     background: $light-color;
     border-radius: 2rem;
     padding: 1.6rem;
@@ -138,6 +139,6 @@
     &__price {
         align-self: center;
         font-weight: bold;
-        padding-left: 1.2rem;
+        padding-left: 3rem;
     }
 }
