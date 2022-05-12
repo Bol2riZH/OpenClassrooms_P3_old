@@ -305,6 +305,7 @@ button:hover {
 }
 
 .starter, .mainCourse, .dessert {
+  overflow: hidden;
   margin: 0 2rem;
 }
 .starter h3, .mainCourse h3, .dessert h3 {
@@ -322,16 +323,22 @@ button:hover {
   margin: 2rem 0;
 }
 .plate__name {
-  overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.plate__name span {
+.plate__name > span {
   font-weight: bold;
+}
+.plate__name > p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .plate__price {
   align-self: center;
   font-weight: bold;
+  padding-left: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

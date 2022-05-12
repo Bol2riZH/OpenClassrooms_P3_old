@@ -100,6 +100,8 @@
 }
         
 .starter, .mainCourse, .dessert {
+    overflow: hidden; //permet à chaque .plate de shrink en ellipsis (= min-width: 0;)
+
     margin: 0 2rem;
     h3 {
         font-weight: normal;
@@ -111,23 +113,31 @@
     display: flex;
     justify-content: space-between;
 
+    
     background: $light-color;
     border-radius: 2rem;
     padding: 1.6rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
-
+    
     margin: 2rem 0;
 
     &__name {
-        overflow: hidden;
-        white-space: nowrap;
         text-overflow: ellipsis;
-        span {
+        white-space: nowrap;
+        overflow: hidden;
+        > span {
             font-weight: bold;
         }
+        > p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
     }
     &__price {
         align-self: center;
         font-weight: bold;
+        padding-left: 1.2rem;
     }
 }
