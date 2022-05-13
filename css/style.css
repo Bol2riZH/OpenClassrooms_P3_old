@@ -147,6 +147,9 @@ button:hover {
   background: #f3f3f3;
   box-shadow: inset 0rem 0.3rem 0.4rem 0.1rem rgba(0, 0, 0, 0.1);
 }
+.search .location .fa-solid {
+  margin-right: 2rem;
+}
 .search .information {
   background: #f6f6f6;
   width: 100%;
