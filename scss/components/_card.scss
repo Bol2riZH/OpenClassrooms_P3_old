@@ -11,7 +11,11 @@
     margin: 3rem;
     border-radius: 1rem;
     background: white;
-    
+    transition: 300ms;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+    }
     @include medium {
         width: 30vw;
         min-width: 300px;

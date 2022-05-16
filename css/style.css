@@ -20,8 +20,19 @@
     opacity: 1;
   }
 }
-@keyframes menu-item-loading {}
-@keyframes menu-item {}
+@keyframes menu-item-loading {
+  0% {
+    transform: rotateX(70deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes menu-item-slide {}
 @keyframes heart {}
 *,
 *::after,
@@ -97,6 +108,11 @@ button:hover {
   margin: 3rem;
   border-radius: 1rem;
   background: white;
+  transition: 300ms;
+}
+.restaurantCard:hover {
+  cursor: pointer;
+  transform: scale(1.01);
 }
 @media screen and (min-width: 1023px) {
   .restaurantCard {
@@ -132,40 +148,35 @@ button:hover {
   margin: 0.5rem 1.5rem;
 }
 
+/*
 .pageLoading {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.4rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  animation: loader-background 1600ms;
-}
-.pageLoading__bar1 {
-  animation: roll-in 600ms ease-out 200ms alternate 2 both;
-  width: 50px;
-  height: 100px;
-  border-radius: 5rem;
-  background: #9057D1;
-}
-.pageLoading__bar2 {
-  animation: roll-in 600ms ease-out 400ms alternate 2 both;
-  width: 50px;
-  height: 100px;
-  border-radius: 5rem;
-  background: #99E2D0;
-}
-.pageLoading__bar3 {
-  animation: roll-in 600ms ease-out 600ms alternate 2 both;
-  width: 50px;
-  height: 100px;
-  border-radius: 5rem;
-  background: #ef77CF;
-}
+    position: fixed;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    animation: loader-background 1600ms;
+    &__bar1 {
+        animation: roll-in 600ms ease-out 200ms alternate 2 both;
+        @include loadingBar ($secondary-color);
+    }
+    &__bar2 {
+        animation: roll-in 600ms ease-out 400ms alternate 2 both;
+        @include loadingBar ($new-color);    
+    }
+    &__bar3 {
+        animation: roll-in 600ms ease-out 600ms alternate 2 both;
+        @include loadingBar ($primary-color);  
+    }
+}
+*/
 .footerPage {
   background: #353535;
   color: white;
@@ -425,6 +436,51 @@ button:hover {
   align-self: center;
   font-weight: bold;
   padding-left: 3rem;
+}
+
+#case1 {
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 0ms;
+}
+
+#case2 {
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 100ms;
+}
+
+#case3 {
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 200ms;
+}
+
+#case4 {
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 300ms;
+}
+
+#case5 {
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 400ms;
+}
+
+#case6 {
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 500ms;
+}
+
+#case7 {
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 600ms;
+}
+
+#case8 {
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 700ms;
+}
+
+#case9 {
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 800ms;
 }
 
 /*# sourceMappingURL=style.css.map */

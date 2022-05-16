@@ -113,7 +113,6 @@
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
     
     margin: 2rem 0;
-
     &__name {
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -133,4 +132,42 @@
         font-weight: bold;
         padding-left: 3rem;
     }
+}
+
+//Chargement du menu3
+#case1 {
+    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation-delay: 0ms;
+}
+#case2 {
+    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation-delay: 100ms;
+}
+#case3 {
+    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation-delay: 200ms;
+}
+#case4 {
+    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation-delay: 300ms;
+}
+#case5 {
+    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation-delay: 400ms;
+}
+#case6 {
+    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation-delay: 500ms;
+}
+#case7 {
+    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation-delay: 600ms;
+}
+#case8 {
+    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation-delay: 700ms;
+}
+#case9 {
+    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation-delay: 800ms;
 }
