@@ -50,6 +50,8 @@
             gap: 3rem;
         }
         .helpCard {
+            color: grey;
+
             display: flex;
             gap: 1rem;
             margin: 1.5rem 0;
@@ -61,12 +63,17 @@
             background-color: $light-grey;
             border-radius: 2rem;
             box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+            > i {
+                position: relative;
+                right: 20px;
+                top: 4px;
+            }
             @include large {
             width: 420px;
             }
             &__number {
                 position: relative;
-                left: -28px;
+                right: 28px;
 
                 width: 25px;
                 height: 25px;
@@ -84,7 +91,14 @@
 
 //PAGE RESTAURANT
 .logo {
-    margin-bottom: 3rem;
+    margin: 2rem 0;
+    > a {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        
+        color: black;
+    }
     > h1 {
         text-align: center;
         font-family: 'shrikand';

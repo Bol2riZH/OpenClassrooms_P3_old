@@ -1,9 +1,25 @@
-// @keyframes btn-hover {
-//     0% {
-//         box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-//     }
-//     100% {
-//         box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.35);
-//         filter:brightness(110%);
-//     }
-// }
+@keyframes roll-in {
+0% {
+    transform: scale(0) rotate(-540deg);
+    opacity: 0;
+}
+100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+}
+}
+  
+
+@keyframes menu-item-loading {
+    
+} 
+
+@keyframes menu-item {
+
+}
+
+@keyframes heart {
+
+}
+
+

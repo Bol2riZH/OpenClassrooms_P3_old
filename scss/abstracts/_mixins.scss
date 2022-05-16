@@ -17,3 +17,11 @@
         @content;
     }
 }
+
+//bar de chargement de la page
+@mixin loadingBar ($color) {
+    width: 50px;
+    height: 100px;
+    border-radius: 5rem;
+    background: $color;
+}
