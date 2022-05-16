@@ -32,7 +32,14 @@
     opacity: 1;
   }
 }
-@keyframes menu-item-slide {}
+@keyframes menu-item-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
 @keyframes heart {}
 *,
 *::after,
@@ -418,6 +425,19 @@ button:hover {
   padding: 1.6rem;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   margin: 2rem 0;
+}
+.plate i {
+  display: none;
+}
+.plate:hover {
+  cursor: pointer;
+}
+.plate:hover i {
+  display: inline;
+  align-self: center;
+  background: #99E2D0;
+  height: 100%;
+  color: white;
 }
 .plate__name {
   text-overflow: ellipsis;
