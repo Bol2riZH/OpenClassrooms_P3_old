@@ -1,0 +1,14 @@
+.fa-heart {
+    height: fit-content;
+    //background: $new-color;
+    background-clip: padding-box;
+}
+
+.heart_bg:hover {
+    .bg{
+        animation: heart 400ms both;
+        width: 100px;
+        background: $primary-color;
+        background-clip: padding-box;
+    }
+}
