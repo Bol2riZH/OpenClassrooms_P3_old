@@ -107,23 +107,33 @@
     justify-content: space-between;
 
     background: $light-color;
-    border-radius: 2rem;
     padding: 1.6rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
     
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+
     margin: 2rem 0;
+    .validate {
+        display: flex;
+        align-items: center;
+    }
     i {
         display: none;
+        color: $light-color;
+        background-color: $new-color;
+        margin-left: 1rem;
     }
     &:hover {
         cursor: pointer;
-        i {
-            display: inline;
-            align-self: center;
-            background: $new-color;
-            height: 100%;
-            color: $light-color;
+        .validate {
+            animation: menu-item-slide 400ms cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate both;
+                i {
+                    display: block;
+                    animation: menu-item-rotate 400ms ease-in-out alternate both;
+                    padding: .5rem;
+                }
         }
+        
     }
     &__name {
         text-overflow: ellipsis;
