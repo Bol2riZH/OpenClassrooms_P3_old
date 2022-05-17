@@ -107,31 +107,33 @@
     justify-content: space-between;
 
     background: $light-color;
-    padding: 1.6rem;
     
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 
-    margin: 2rem 0;
+    margin: 2rem 1rem;
     .validate {
         display: flex;
         align-items: center;
-    }
-    i {
-        display: none;
-        color: $light-color;
-        background-color: $new-color;
-        margin-left: 1rem;
+        i {
+            display: none;
+            color: $light-color;
+        }
     }
     &:hover {
         cursor: pointer;
         .validate {
-            animation: menu-item-slide 400ms cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate both;
+            animation: menu-item-slide 600ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            &__bg {
+                background: $new-color;
+                border-top-right-radius: 1.5rem;
+                border-bottom-right-radius: 1.5rem;
+                padding: 2.2rem;
                 i {
                     display: block;
-                    animation: menu-item-rotate 400ms ease-in-out alternate both;
-                    padding: .5rem;
+                    animation: menu-item-rotate 400ms ease-in-out both;
                 }
+            }
         }
         
     }
@@ -139,6 +141,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        padding: 1.6rem;
         > span {
             font-weight: bold;
         }
@@ -153,6 +156,7 @@
         align-self: center;
         font-weight: bold;
         padding-left: 3rem;
+        padding-right: 1.6rem;
     }
 }
 

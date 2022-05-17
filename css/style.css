@@ -42,7 +42,7 @@
 }
 @keyframes menu-item-rotate {
   0% {
-    transform: rotate(45deg);
+    transform: rotate(90deg);
   }
   100% {
     transform: rotate(0deg);
@@ -429,36 +429,39 @@ button:hover {
   display: flex;
   justify-content: space-between;
   background: white;
-  padding: 1.6rem;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
-  margin: 2rem 0;
+  margin: 2rem 1rem;
 }
 .plate .validate {
   display: flex;
   align-items: center;
 }
-.plate i {
+.plate .validate i {
   display: none;
   color: white;
-  background-color: #99E2D0;
-  margin-left: 1rem;
 }
 .plate:hover {
   cursor: pointer;
 }
 .plate:hover .validate {
-  animation: menu-item-slide 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) alternate both;
+  animation: menu-item-slide 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.plate:hover .validate i {
+.plate:hover .validate__bg {
+  background: #99E2D0;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  padding: 2.2rem;
+}
+.plate:hover .validate__bg i {
   display: block;
-  animation: menu-item-rotate 400ms ease-in-out alternate both;
-  padding: 0.5rem;
+  animation: menu-item-rotate 400ms ease-in-out both;
 }
 .plate__name {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  padding: 1.6rem;
 }
 .plate__name > span {
   font-weight: bold;
@@ -472,6 +475,7 @@ button:hover {
   align-self: center;
   font-weight: bold;
   padding-left: 3rem;
+  padding-right: 1.6rem;
 }
 
 #case1 {
