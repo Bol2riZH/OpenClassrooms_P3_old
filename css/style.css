@@ -53,7 +53,7 @@
     transform: scale(0);
   }
   100% {
-    transform: scale(1);
+    transform: scale(10);
   }
 }
 *,
@@ -199,16 +199,18 @@ button:hover {
     }
 }
 */
-.fa-heart {
-  height: fit-content;
-  background-clip: padding-box;
+.heart .fa-solid {
+  display: none;
+  background-image: linear-gradient(#ef77CF, #9057D1);
+  -webkit-background-clip: text;
+  color: transparent;
 }
-
-.heart_bg:hover .bg {
-  animation: heart 400ms both;
-  width: 100px;
-  background: #ef77CF;
-  background-clip: padding-box;
+.heart:hover .fa-regular {
+  display: none;
+}
+.heart:hover .fa-solid {
+  display: inline;
+  animation: heart 10s forwards;
 }
 
 .footerPage {
@@ -455,7 +457,6 @@ button:hover {
   margin: 2rem 0.6rem;
 }
 .plate__name {
-  flex: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -471,18 +472,16 @@ button:hover {
 }
 .plate .validate {
   display: flex;
-  position: relative;
   transition: all 0.5s;
 }
 .plate .validate__price {
   align-self: center;
   font-weight: bold;
-  margin-right: 1.6rem;
-  margin-left: 1rem;
+  margin: 0 1.6rem 0 1rem;
 }
 .plate .validate__bg {
   position: absolute;
-  left: 56px;
+  left: 100%;
   background: #99E2D0;
   padding: 2.2rem;
 }
@@ -492,49 +491,55 @@ button:hover {
   transform: rotate(180deg);
 }
 .plate:hover .validate {
-  transform: translateX(-70px);
+  transform: translate(-140%);
 }
 .plate:hover .validate__bg i {
   transform: rotate(0deg);
 }
 
-/*
-//Chargement du menu
 #case1 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 0ms;
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 0ms;
 }
+
 #case2 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 100ms;
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 100ms;
 }
+
 #case3 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 200ms;
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 200ms;
 }
+
 #case4 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 300ms;
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 300ms;
 }
+
 #case5 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 400ms;
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 400ms;
 }
+
 #case6 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 500ms;
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 500ms;
 }
+
 #case7 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 600ms;
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 600ms;
 }
+
 #case8 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 700ms;
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 700ms;
 }
+
 #case9 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 800ms;
-}*/
+  animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 800ms;
+}
 
 /*# sourceMappingURL=style.css.map */
