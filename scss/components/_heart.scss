@@ -1,22 +1,28 @@
-.heart {
-    .fa-solid {
-        display: none;
+
+    .fa-regular {
+        position: relative;
+    }
+    .fa-regular::after { 
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        content: '\f004';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
         background-image: linear-gradient(
             $primary-color,
             $secondary-color
             );
         -webkit-background-clip: text;
         color: transparent;
-    }
-    &:hover {
-        .fa-regular {
-            display: none;
+        
+        opacity: 0;
+        transition: 
+            opacity ease-out 200ms,
+            filter ease-out 350ms;
         }
-        .fa-solid {
-            display: inline;
-            animation: heart 10s forwards;
-            
-        }
+    .fa-regular:hover::after {
+        opacity: 1;
+        filter: brightness(110%);
     }
-    
-}
