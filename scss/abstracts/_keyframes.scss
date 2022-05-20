@@ -21,45 +21,21 @@
         opacity: (1);
     }
 }
-  
 
 @keyframes menu-item-loading {
     0% {
-    transform: rotateX(70deg);
-    transform-origin: top;
-    opacity: 0;
-    }
-    100% {
-    transform: rotateX(0deg);
-    transform-origin: top;
-    opacity: 1;
-    }
-}
-
-@keyframes menu-item-slide {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(-80px);
-    }
-}
-@keyframes menu-item-rotate {
-    0% {
-        transform: rotate(90deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes heart {  
-    0% {
         transform: scale(0);
+        transform: rotateX(70deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+    25% {
+        transform: scale(0.5);
     }
     100% {
-        transform: scale(10);
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+        transform: scale(1);
     }
 }
-
-

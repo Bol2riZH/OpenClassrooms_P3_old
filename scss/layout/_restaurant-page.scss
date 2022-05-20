@@ -58,7 +58,8 @@
 }
         
 .course {
-    overflow: hidden; //Permet à chaque .plate de shrink en ellipsis (= min-width: 0;)
+    min-width: 0; //permet ellipsis des plats
+
     margin: 0 2rem;   
     @include medium {
         width: 100%;
@@ -90,13 +91,15 @@
     border-radius: 1.5rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 
-    margin: 2rem .6rem;
+    padding: 1.6rem;
+    margin: 2rem 0;
+
     &__name {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        
-        padding: 1.6rem 0 1.6rem 1.6rem;
+
+        flex:1; //la div prend tout l'espace disponible > important pour la transition width du prix
         span {
             font-weight: bold;
         }
@@ -106,77 +109,57 @@
             overflow: hidden;
         }
     }
-    .validate {
+    &__price {
+        font-weight: bold;
+        margin-left: 1rem;
+
         display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        transition: all .5s;
-        &__price {
-            align-self: center;
+        position: relative;
 
-            font-weight: bold;
-            margin: 0 1.6rem 0 1rem;
-        }
-        &__bg {
-            position: absolute;
-            left: 100%;
-
-            background: $new-color;
-            padding: 2.2rem;
-            i {
-                color: $light-color;
-
-                transition: all .5s;
-                transform: rotate(180deg);
-            }
-        }
+        width: 28px; //initie la taille de price pour pouvoir l'agrandire sur un :hover
+        transition: width 500ms;
     }
-    &:hover {
-        .validate {
-            transform: translate(-140%);
-            &__bg {
-                i {
-                transform: rotate(0deg);
-                }
-            }
-        }
+    &__price::before {
+        content: '';
+        background: $new-color;
+        margin-left: 1rem;
+        width: 70px;
+        height: 80px;
+
+        position: absolute;
+        left: 3.5rem;
+    }
+    &__price::after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        content: '\f058';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 600;
+        font-size: 3rem;
+        color: $light-color;
+
+        position: absolute;
+        left: 6.4rem;
+
+        transform: rotate(120deg);
+        transition: transform 500ms;
+    }
+    &:hover &__price {
+        width: 99px;
+    }
+    &:hover &__price::after {
+        transform: rotate(0deg);
     }
 }
 
-
-//Chargement du menu
-#case1 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 0ms;
-}
-#case2 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 100ms;
-}
-#case3 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 200ms;
-}
-#case4 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 300ms;
-}
-#case5 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 400ms;
-}
-#case6 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 500ms;
-}
-#case7 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 600ms;
-}
-#case8 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 700ms;
-}
-#case9 {
-    animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation-delay: 800ms;
+@for $i from 1 to 10 { //boucle de chargement des plats
+    #case-#{$i} {
+        animation: menu-item-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+        animation-delay:  #{$i/10}s;
+    }
 }
