@@ -1,0 +1,14 @@
+.logo {
+    margin: 2rem 0;
+    > a {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        
+        color: black;
+    }
+    > h1 {
+        text-align: center;
+        font-family: 'shrikand', sans-serif;
+    }
+}

@@ -1,4 +1,3 @@
-/*
 .pageLoading {
     position: fixed;
 
@@ -19,11 +18,10 @@
     }
     &__bar2 {
         animation: roll-in 600ms ease-out 400ms alternate 2 both;
-        @include loadingBar ($new-color);    
+        @include loadingBar ($tertiary-color);    
     }
     &__bar3 {
         animation: roll-in 600ms ease-out 600ms alternate 2 both;
         @include loadingBar ($primary-color);  
     }
 }
-*/

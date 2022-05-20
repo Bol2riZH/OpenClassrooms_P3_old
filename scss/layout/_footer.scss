@@ -1,13 +1,13 @@
 .footerPage {
     background: $background-footer-color;
-    color: $light-color;
+    color: white;
     padding: 1.5rem;
     @include medium {
         width: 100%;
     }
 
     h1 {
-        font-family: 'shrikand';
+        font-family: 'shrikand', sans-serif;
         font-weight: 300;
         font-size: 2rem;
         margin-bottom: 1rem;
@@ -24,7 +24,7 @@
         }
     }
     a {
-        color: $light-color;
+        color: white;
         &:hover {
             text-decoration: underline;
         }

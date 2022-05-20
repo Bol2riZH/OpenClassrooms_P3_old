@@ -151,35 +151,40 @@ button:hover {
   margin: 0.5rem 1.5rem;
 }
 
-/*
 .pageLoading {
-    position: fixed;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.4rem;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-
-    animation: loader-background 1600ms;
-    &__bar1 {
-        animation: roll-in 600ms ease-out 200ms alternate 2 both;
-        @include loadingBar ($secondary-color);
-    }
-    &__bar2 {
-        animation: roll-in 600ms ease-out 400ms alternate 2 both;
-        @include loadingBar ($new-color);    
-    }
-    &__bar3 {
-        animation: roll-in 600ms ease-out 600ms alternate 2 both;
-        @include loadingBar ($primary-color);  
-    }
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: loader-background 1600ms;
 }
-*/
+.pageLoading__bar1 {
+  animation: roll-in 600ms ease-out 200ms alternate 2 both;
+  width: 50px;
+  height: 100px;
+  border-radius: 5rem;
+  background: #9057D1;
+}
+.pageLoading__bar2 {
+  animation: roll-in 600ms ease-out 400ms alternate 2 both;
+  width: 50px;
+  height: 100px;
+  border-radius: 5rem;
+  background: #99E2D0;
+}
+.pageLoading__bar3 {
+  animation: roll-in 600ms ease-out 600ms alternate 2 both;
+  width: 50px;
+  height: 100px;
+  border-radius: 5rem;
+  background: #ef77CF;
+}
+
 .fa-regular {
   position: relative;
 }
@@ -214,7 +219,7 @@ button:hover {
   }
 }
 .footerPage h1 {
-  font-family: "shrikand";
+  font-family: "shrikand", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -242,7 +247,7 @@ button:hover {
   text-align: center;
 }
 .search h1 {
-  font-family: "shrikand";
+  font-family: "shrikand", sans-serif;
   background: white;
   margin: 1.6rem 0;
 }
@@ -273,7 +278,7 @@ button:hover {
 .help {
   margin: 3rem;
 }
-@media screen and (min-width: 1489px) {
+@media screen and (min-width: 1023px) {
   .help h2 {
     text-align: center;
   }
@@ -281,7 +286,7 @@ button:hover {
 .help .container {
   margin-top: 1rem;
 }
-@media screen and (min-width: 1489px) {
+@media screen and (min-width: 1023px) {
   .help .container {
     display: flex;
     justify-content: center;
@@ -305,7 +310,7 @@ button:hover {
   right: 20px;
   top: 4px;
 }
-@media screen and (min-width: 1489px) {
+@media screen and (min-width: 1023px) {
   .help .container .helpCard {
     width: 420px;
   }
@@ -333,7 +338,7 @@ button:hover {
 }
 .logo > h1 {
   text-align: center;
-  font-family: "shrikand";
+  font-family: "shrikand", sans-serif;
 }
 
 .restaurant {
@@ -348,6 +353,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .restaurant h2 {
+    margin: 0;
   }
 }
 
@@ -366,7 +374,7 @@ button:hover {
 }
 
 .restaurantPage__header {
-  margin-top: -50px;
+  margin-top: -60px;
   display: flex;
   align-self: center;
   justify-content: space-between;
@@ -376,7 +384,7 @@ button:hover {
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
   padding: 3rem 2rem;
-  font-family: "shrikand";
+  font-family: "shrikand", sans-serif;
 }
 
 .restaurantPage {
