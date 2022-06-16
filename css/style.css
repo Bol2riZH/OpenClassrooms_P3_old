@@ -200,12 +200,14 @@ button:hover {
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
-  transition: opacity ease-out 200ms, filter ease-out 350ms;
+  transform: scale(0);
+  transition: opacity ease-out 300ms, filter ease-out 450ms, transform ease-out 500ms;
 }
 
 .fa-regular:hover::after {
   opacity: 1;
   filter: brightness(110%);
+  transform: scale(1);
 }
 
 .footerPage {
